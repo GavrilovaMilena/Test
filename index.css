@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  background-image: url("img/header-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  height: 900px;
+  padding: 0 376px;
+  color: #fff;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.menu-wrapper {
+  display: flex;
+  padding: 55px 0 0 0;
+  height: 55px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  background-image: url("img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55px;
+  width: 269px;
+}
+
+.menu {
+  margin: 0 160px 0 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 45px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.menu-text:last-child {
+  margin-right: 0;
+}
+
+.menu-text:hover {
+  transition: 1s;
+  opacity: .7;
+}
+
+.connection-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone-icon {
+  display: flex;
+  background-image: url("img/phone.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  margin-right: 13px;
+}
+
+.phone-number {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.phone-number:hover {
+  transition: 1s;
+  opacity: .7;
+}
+
+.opening-hours {
+  margin-top: 154px;
+  width: 366px;
+  height: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.slogan {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 88px;
+  margin-top: 24px;
+  width: 1110px;
+  height: 176px;
+}
+
+.reserve-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve {
+  background-color: #3A4574;
+  width: 270px;
+  height: 100px;
+  padding: 38px 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.reserve:hover {
+  transition: 1s;
+  background-color: #333d65;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.circles {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  margin-right: 25px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.circles:last-child {
+  margin-right: 0;
+}
+
+.circles:hover {
+  transition: 1s;
+  opacity: .7;
+}
+
+.circles-fb {
+  background-image: url("img/fb.svg");
+}
+
+.circles-ig {
+  background-image: url("img/ig.svg");
+}
+
+.circles-tw {
+  background-image: url("img/tw.svg");
+}
+
+.circles-yt {
+  background-image: url("img/yt.svg");
+}
