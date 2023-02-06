@@ -182,3 +182,97 @@ p {
 .circles-yt {
   background-image: url("img/yt.svg");
 }
+
+.container-one {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 375px 180px;
+  position: relative;
+}
+
+.meal-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #E7E7E7;
+  width: 470px;
+  margin-bottom: 20px;
+}
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.container-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.container-meal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.eat {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 10px 0 20px 0;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  margin: 0 12px;
+  height: 5px;
+  padding-bottom: 12px;
+}
+
+.dot {
+  background-image: url("img/dot.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5px;
+  height: 5px;
+  margin-right: 12px;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.cube {
+  background-image: url("img/cube.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 471px;
+  height: 502px;
+  margin: 51px 0 0 129px;
+}
+
+.img-one {
+  background-image: url("img/Rectangle80.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 323px;
+  height: 486px;
+  position: absolute;
+  top: 80px;
+  right: 375px;
+}
+
+.img-two {
+  background-image: url("img/Rectangle77.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 323px;
+  height: 486px;
+  position: absolute;
+  top: 232px;
+  right: 720px;
+}
