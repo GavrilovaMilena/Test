@@ -23,7 +23,7 @@
     <h2 class="opening-hours">OPEN EVERYDAY 6AM - 9PM</h2>
     <h1 class="slogan">A bad day with lunch is better than a good day without it.</h1>
     <div class="reserve-wrapper">
-        <button class="reserve">Reserve a table</button>
+        <button class="reserve" rel="popup">Reserve a table</button>
         <div class="social">
             <div class="circles circles-fb"></div>
             <div class="circles circles-ig"></div>
@@ -116,5 +116,65 @@
         <div class="right-arrow"></div>
     </div>
 </div>
+<div class="popup-overlay">
+    <div class="popup-window" id="popup">
+        <div class="popup-close"></div>
+        <div class="contacts">
+            <p class="contacts-title">Contacts</p>
+            <div class="contacts-container">
+                <div class="contacts-circle"><div class="contacts-phone-icon"></div></div>
+                <div class="contacts-texts">
+                    <p class="contacts-container-title">Phone Number</p>
+                    <p class="contacts-text">+32 9 282 57 25</p>
+                </div>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-circle"><div class="contacts-img-icon"></div></div>
+                <div class="contacts-texts">
+                    <p class="contacts-container-title">Email</p>
+                    <p class="contacts-text">info@email.com</p>
+                </div>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-circle"><div class="contacts-opening-hours-icon"></div></div>
+                <div class="contacts-texts">
+                    <p class="contacts-container-title">Opening Hours</p>
+                    <p class="contacts-text">Everyday from 6 AM - 9 PM</p>
+                </div>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-circle"><div class="contacts-map-icon"></div></div>
+                <div class="contacts-texts">
+                    <p class="contacts-container-title">Map Street</p>
+                    <p class="contacts-text">Jl. Raya Surabaya 2787</p>
+                </div>
+            </div>
+        </div>
+        <div class="reserve-wrapper-popup">
+            <p class="reserve-title">Reserve a table</p>
+            <div class="form-wrapper">
+                <div class="input-wrapper-one">
+                    <div class="input-container">
+                        <p class="input-title">Name</p>
+                        <input class="input-one" placeholder="Input your name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <p class="input-title">Email</p>
+                        <input class="input-one" placeholder="Input your email" type="email">
+                    </div>
+                </div>
+                <div class="input-wrapper-two">
+                    <div class="input-container">
+                        <p class="input-title">Speciale Request</p>
+                        <textarea class="input-request" placeholder="Input your special request" ></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="reserve-button">Send</button>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
