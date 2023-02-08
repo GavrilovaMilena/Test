@@ -8,6 +8,16 @@ $('.popup-close').click(function() {
     $('.popup-overlay, .popup-window').removeClass('show');
 })
 
+$('.burger-menu').click(function() {
+    let popup_id = $('#' + $(this).attr("rel"));
+    $(popup_id).removeClass('show');
+    $(popup_id).addClass('show');
+    $('.popup-overlay-mobile').addClass('show');
+})
+$('.popup-menu-close').click(function() {
+    $('.popup-overlay-mobile, .mobile-menu').removeClass('show');
+})
+
 function myPlugin({ swiper, extendParams, on }) {
     extendParams({
         debugger: false,

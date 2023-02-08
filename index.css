@@ -11,10 +11,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
-    height: 900px;
-    padding: 0 376px;
     color: #fff;
     flex-direction: column;
+    max-width: 100%;
 }
 
 h1 {
@@ -45,14 +44,20 @@ input {
     background-image: url("img/logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55px;
-    width: 269px;
 }
 
 .menu {
     margin: 0 160px 0 130px;
     display: flex;
     flex-direction: row;
+}
+
+.menu-popup {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
 }
 
 .menu-text {
@@ -129,12 +134,6 @@ input {
 
 .reserve {
     background-color: #3A4574;
-    width: 270px;
-    height: 100px;
-    padding: 38px 64px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
     border: none;
     color: #fff;
     transition: 1s;
@@ -189,8 +188,6 @@ input {
 
 .container-one {
     display: flex;
-    flex-direction: row;
-    padding: 80px 375px 180px;
 }
 
 .meal-wrapper {
@@ -202,8 +199,6 @@ input {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #E7E7E7;
-    width: 470px;
-    margin-bottom: 20px;
 }
 
 .container:last-child {
@@ -212,8 +207,6 @@ input {
 
 .container-title {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
 }
 
 .container-meal {
@@ -224,26 +217,19 @@ input {
 
 .eat {
     font-weight: 400;
-    font-size: 18px;
     line-height: 32px;
-    margin: 10px 0 20px 0;
 }
 
 .dots {
     display: flex;
     flex-direction: row;
-    margin: 0 12px;
     height: 5px;
-    padding-bottom: 12px;
 }
 
 .dot {
     background-image: url("img/dot.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 5px;
-    height: 5px;
-    margin-right: 12px;
 }
 
 .dot:last-child {
@@ -270,8 +256,6 @@ input {
     width: 323px;
     height: 486px;
     position: absolute;
-    top: 0;
-    right: -100px;
 }
 
 .img-two {
@@ -281,21 +265,17 @@ input {
     width: 323px;
     height: 486px;
     position: absolute;
-    left: 30px;
-    top: 155px;
 }
 
 .container-two {
     background-color: #3A4574;
     display: flex;
     justify-content: center;
-    padding: 220px 400px;
     position: relative;
 }
 
 .quotes-wrapper {
     display: flex;
-    padding: 220px 0;
     flex-direction: row;
     align-items: center;
 }
@@ -303,60 +283,38 @@ input {
 .left-arrow {
     background-image: url("img/arrow-up.svg");
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    background-size: cover;
     position: absolute;
-    top: 362px;
 }
 
 .img-quotes {
     background-image: url("img/quotes.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 83px;
-    height: 58px;
 }
 
 .title-quotes {
     font-weight: 600;
-    font-size: 36px;
-    line-height: 40px;
     color: #D3B47F;
-    width: 785px;
-    height: 40px;
-    margin: 38px 0 20px 0;
 }
 
 .text-quotes {
-    width: 785px;
-    height: 111px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 40px;
-    text-align: center;
     color: #FFFFFF;
-    margin-bottom: 40px;
 }
 
 .name-quotes {
-    width: 333px;
-    height: 40px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.245em;
     color: #D3B47F;
+    letter-spacing: 0.245em;
+    text-align: center;
 }
 
 .right-arrow {
     background-image: url("img/arrow-down.svg");
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    background-size: cover;
     position: absolute;
-    right: 400px;
-    top: 362px;
 }
 
 .popup-overlay {
@@ -378,12 +336,9 @@ input {
 #popup {
     position: relative;
     z-index: 1;
-    width: 1000px;
-    height: 500px;
     background-color: #fff;
-    border-radius: 40px;
-    padding: 30px 30px 50px 30px;
-    justify-content: space-between;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .show {
@@ -394,11 +349,7 @@ input {
     background-image: url("img/close.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 55px;
-    height: 55px;
     position: absolute;
-    right: -35px;
-    top: -35px;
     cursor: pointer;
     transition: 1s;
 }
@@ -410,26 +361,15 @@ input {
 
 .reserve-title {
     font-weight: 700;
-    font-size: 48px;
     width: 100%;
 }
 
 .input-wrapper-one {
     display: flex;
-    flex-direction: row;
-}
-
-.input-container {
-    margin-right: 19px;
-}
-
-.input-container:last-child {
-    margin-right: 0;
 }
 
 .input-title {
     font-weight: 400;
-    font-size: 16px;
     line-height: 32px;
     margin: 30px 0 10px 0;
 }
@@ -451,11 +391,8 @@ input {
 
 .reserve-button {
     background-color: #3A4574;
-    width: 270px;
-    height: 100px;
     padding: 38px 64px;
     font-weight: 500;
-    font-size: 18px;
     line-height: 24px;
     border: none;
     color: #fff;
@@ -471,7 +408,6 @@ input {
 
 .contacts-title {
     font-weight: 700;
-    font-size: 48px;
     width: 100%;
     margin-bottom: 35px;
 }
@@ -494,8 +430,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
     margin-right: 16px;
 }
 
@@ -503,32 +437,24 @@ input {
     background-image: url("img/phone-two.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20px;
-    width: 20px;
 }
 
 .contacts-img-icon {
     background-image: url("img/mail-img.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20px;
-    width: 20px;
 }
 
 .contacts-opening-hours-icon {
     background-image: url("img/opening-hours-img.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20px;
-    width: 20px;
 }
 
 .contacts-map-icon {
     background-image: url("img/map.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20px;
-    width: 20px;
 }
 
 .contacts-texts {
@@ -537,13 +463,11 @@ input {
 
 .contacts-container-title {
     font-weight: 400;
-    font-size: 16px;
     line-height: 32px;
 }
 
 .contacts-text {
     font-weight: 500;
-    font-size: 24px;
 }
 
 .swiper {
@@ -568,4 +492,776 @@ input {
 .swiper-wrapper {
     display: flex;
     flex-direction: row;
+}
+
+@media (min-width: 320px) {
+
+    header {
+        padding: 0 40px;
+    }
+
+    .logo {
+        height: 101px;
+        width: 540px;
+    }
+
+    .opening-hours {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .slogan {
+        width: 100%;
+        margin-top: 60px;
+        font-size: 88px;
+        height: auto;
+    }
+
+    .reserve-wrapper {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .reserve {
+        height: auto;
+        width: 100%;
+        font-size: 40px;
+        padding: 50px 64px;
+        margin-bottom: 80px;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .circles {
+        width: 95px;
+        height: 95px;
+        margin: 0;
+    }
+
+    .container-one {
+        flex-direction: column;
+        padding: 80px 40px 165px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container-title {
+        font-size: 70px;
+        width: 100%;
+        line-height: 70px;
+    }
+
+    .eat {
+        font-size: 38px;
+        margin: 30px 0 40px 0;
+    }
+
+    .dots {
+        margin: 0 60px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .dot:last-child {
+        margin-right: 0;
+    }
+
+    .wrapper-img {
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .img-one {
+        top: -50px;
+        right: 135px;
+    }
+
+    .img-two {
+        left: 70px;
+        top: 135px;
+    }
+
+    .img-quotes {
+        width: 130px;
+        height: 91px;
+        margin-bottom: 50px;
+    }
+
+    #popup {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .input-title {
+        font-size: 35px;
+    }
+
+    .input-wrapper-one {
+        flex-direction: column;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input-one {
+        width: calc(100% - 85px);
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .input-request {
+        font-size: 30px;
+    }
+
+    .reserve-button {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .popup-close {
+        right: 20px;
+        top: -95px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .contacts-title {
+        font-size: 65px;
+    }
+
+    .reserve-title {
+        font-size: 65px;
+    }
+
+    .contacts-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contacts-phone-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacts-phone-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacts-img-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacts-opening-hours-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacts-map-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacts-container-title {
+        font-size: 40px;
+    }
+
+    .contacts-text {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-wrapper {
+        padding: 80px 0 0 0;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: flex;
+        background-image: url("img/burger-menu.svg");
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        margin-left: 340px;
+    }
+
+    .popup-overlay-mobile {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    #popup-menu {
+        z-index: 1;
+        color: #000;
+        display: flex;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        border-radius: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .popup-menu-close {
+        background-image: url("img/close-mobile-menu.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        cursor: pointer;
+        right: 30px;
+        top: 30px;
+        width: 70px;
+        height: 70px;
+        transition: 1s;
+    }
+
+    .menu-popup {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-text {
+        margin-right: 0;
+        font-size: 40px;
+        margin-bottom: 110px;
+        line-height: 50px;
+    }
+
+    .connection-wrapper {
+        display: none;
+    }
+
+    .connection-wrapper-mobile {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .phone-number {
+        font-size: 30px;
+    }
+
+    .container-title {
+        font-size: 50px;
+    }
+
+    .eat {
+        font-size: 35px;
+    }
+
+    .container-two {
+        padding: 170px 40px;
+    }
+
+    .left-arrow {
+        top: 430px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-arrow {
+        right: 0;
+        top: 430px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .title-quotes {
+        font-size: 50px;
+        height: auto;
+        line-height: 60px;
+    }
+
+    .text-quotes {
+        font-size: 35px;
+        height: auto;
+        line-height: 50px;
+    }
+
+    .name-quotes {
+        height: auto;
+        font-size: 40px;
+        width: auto;
+        line-height: 50px;
+    }
+
+    #popup {
+        flex-direction: row;
+        padding: 25px 10px;
+        justify-content: space-around;
+    }
+
+    .popup-close {
+        top: -55px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .contacts-title {
+        font-size: 55px;
+    }
+
+    .contacts-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contacts-phone-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contacts-img-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contacts-opening-hours-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contacts-map-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contacts-container-title {
+        font-size: 32px;
+    }
+
+    .contacts-text {
+        font-size: 20px;
+    }
+
+    .reserve-title {
+        font-size: 55px;
+    }
+
+    .input-title {
+        font-size: 32px;
+    }
+
+    .input-one {
+        width: calc(100% - 86px);
+        font-size: 20px;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+
+    .input-request {
+        font-size: 20px;
+    }
+
+    .reserve-button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        height: 900px;
+        padding: 0 160px;
+    }
+
+    .menu-wrapper {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        height: 55px;
+        padding-top: 55px;
+    }
+
+    .logo {
+        height: 56px;
+        width: 275px;
+    }
+
+    .menu {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 45px 0 0;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .menu-text:last-child {
+        margin-right: 0;
+    }
+
+    .menu-text:hover {
+        transition: 1s;
+        opacity: .7;
+    }
+
+    .connection-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .phone-icon {
+        display: flex;
+        background-image: url("img/phone.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+        margin-right: 13px;
+    }
+
+    .phone-number {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .phone-number:hover {
+        transition: 1s;
+        opacity: .7;
+    }
+
+    .opening-hours {
+        margin-top: 154px;
+        width: 366px;
+        height: 32px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .slogan {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 88px;
+        margin-top: 24px;
+        width: 1110px;
+        height: 176px;
+    }
+
+    .reserve-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .reserve {
+        width: 310px;
+        height: 100px;
+        padding: 38px 64px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .reserve:hover {
+        transition: 1s;
+        background-color: #333d65;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        justify-content: end;
+    }
+
+    .circles {
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 48px;
+        height: 48px;
+        margin-right: 25px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .container-one {
+        padding: 80px 160px 180px;
+        flex-direction: row;
+    }
+
+    .container {
+        width: 470px;
+        margin-bottom: 20px;
+    }
+
+    .container-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .eat {;
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+    }
+
+    .dots {
+        margin: 0 12px;
+        padding-bottom: 12px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        margin-right: 12px;
+    }
+
+    .wrapper-img {
+        margin-top: 0;
+    }
+
+    .img-one {
+        top: 0;
+        right: -60px;
+    }
+
+    .img-two {
+        left: 30px;
+        top: 155px;
+    }
+
+    .container-two {
+        padding: 170px 250px;
+    }
+
+    .left-arrow {
+        top: 362px;
+        width: 70px;
+        height: 70px;
+        left: 200px;
+    }
+
+    .img-quotes {
+        width: 83px;
+        height: 58px;
+    }
+
+    .title-quotes {
+        font-size: 36px;
+        line-height: 40px;
+        width: 785px;
+        height: 40px;
+        margin: 38px 0 20px 0;
+    }
+
+    .text-quotes {
+        width: 785px;
+        height: 111px;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .name-quotes {
+        width: 333px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .right-arrow {
+        width: 70px;
+        height: 70px;
+        right: 200px;
+        top: 362px;
+    }
+
+    #popup {
+        position: relative;
+        z-index: 1;
+        width: 1000px;
+        height: 500px;
+        background-color: #fff;
+        padding: 30px 30px 50px 30px;
+        justify-content: space-between;
+    }
+
+    .popup-close {
+        right: -40px;
+        top: -40px;
+    }
+
+    .contacts-title {
+        font-size: 48px;
+    }
+
+    .contacts-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contacts-phone-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contacts-img-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contacts-opening-hours-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contacts-map-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contacts-container-title {
+        font-size: 16px;
+    }
+
+    .contacts-text {
+        font-size: 24px;
+    }
+
+    .input-wrapper-one {
+        flex-direction: row;
+    }
+
+    .input-container {
+        margin-right: 19px;
+    }
+
+    .input-container:last-child {
+        margin-right: 0;
+    }
+
+    .input-title {
+        font-size: 16px;
+    }
+
+    .reserve-button {
+        width: 270px;
+        height: 100px;
+        font-size: 18px;
+    }
+
+    .reserve-wrapper-popup {
+        padding: 0;
+    }
+
+    .contacts {
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1900px) {
+
+    header {
+        padding: 0 376px;
+    }
+
+    .container-one {
+        padding: 80px 375px 180px;
+    }
+
+    .img-one {
+        top: 0;
+        right: -100px;
+    }
+
+    .container-two {
+        padding: 220px 400px;
+    }
+
+    .quotes-wrapper {
+        padding: 220px 0;
+    }
+
+    .left-arrow {
+        top: 362px;
+        width: 70px;
+        height: 70px;
+        left: 400px;
+    }
+
+    .right-arrow {
+        width: 70px;
+        height: 70px;
+        right: 400px;
+        top: 362px;
+    }
 }
